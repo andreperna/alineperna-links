@@ -152,10 +152,10 @@ main {
     width: 8rem;
 }
 
-.l-links a .discount-wrapper h3::before{
-    /* border: 1px solid blue; */
+/* .l-links a .discount-wrapper h3::before{
+    border: 1px solid blue;
     content: '🏷️ ';
-}
+} */
 
 .l-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
