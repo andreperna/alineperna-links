@@ -114,7 +114,8 @@ p {
 
 
 body {
-    background: linear-gradient(var(--bg-color-primary), var(--bg-color-secondary));
+    /* background: linear-gradient(var(--bg-color-primary), var(--bg-color-secondary)); */
+    background-color: #fff;
 }
 
 main {
@@ -140,7 +141,7 @@ main {
 
 .l-profile .container-image {
     margin: auto;
-    border: 0.1rem solid var(--bg-color-secondary);
+    border: 0.2rem solid var(--isabelline);
     height: min-content;
     width: min-content;
     padding: 0.25rem;
@@ -150,7 +151,7 @@ main {
 
 .l-profile img {
     /* border: .25rem solid var(--bg-color-secondary); */
-    border: 0.1rem solid var(--bg-color-secondary);
+    border: 0.1rem solid var(--isabelline);
     display: block;
     height: 150px;
     width: 150px;
@@ -178,7 +179,7 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--isabelline);
     border-radius: 5rem;
     padding: .25rem;
 }
