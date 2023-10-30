@@ -2,12 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 
+/* CSS HEX */
+/* --tropical-indigo: #B19EF7ff;
+--beaver: #B58171ff;
+--isabelline: #EFEAE7ff;
+--white: #FFFFFFff;
+--black: #000000ff; */
+
+/* CSS HSL */
+/* --tropical-indigo: hsla(253, 85%, 79%, 1);
+--beaver: hsla(14, 31%, 58%, 1);
+--isabelline: hsla(22, 20%, 92%, 1);
+--white: hsla(0, 0%, 100%, 1);
+--black: hsla(0, 0%, 0%, 1); */
+
+/* SCSS HEX */
+/* $tropical-indigo: #B19EF7ff;
+$beaver: #B58171ff;
+$isabelline: #EFEAE7ff;
+$white: #FFFFFFff;
+$black: #000000ff; */
+
+/* SCSS HSL */
+/* $tropical-indigo: hsla(253, 85%, 79%, 1);
+$beaver: hsla(14, 31%, 58%, 1);
+$isabelline: hsla(22, 20%, 92%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$black: hsla(0, 0%, 0%, 1); */
+
+/* SCSS RGB */
+/* $tropical-indigo: rgba(177, 158, 247, 1);
+$beaver: rgba(181, 129, 113, 1);
+$isabelline: rgba(239, 234, 231, 1);
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1); */
+
+/* SCSS Gradient */
+/* $gradient-top: linear-gradient(0deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-right: linear-gradient(90deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-bottom: linear-gradient(180deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-left: linear-gradient(270deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-top-right: linear-gradient(45deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-bottom-right: linear-gradient(135deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-top-left: linear-gradient(225deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-bottom-left: linear-gradient(315deg, #B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff);
+$gradient-radial: radial-gradient(#B19EF7ff, #B58171ff, #EFEAE7ff, #FFFFFFff, #000000ff); */
+
+
 :root {
     --bg-color-primary: rgb(174, 192, 234);
     --bg-color-secondary: rgb(241, 196, 232);
     --font-color-primary: rgb(75, 0, 130);
     --font-color-secondary: rgb(28, 28, 28);
-    
+
+    --tropical-indigo: #B19EF7ff;
+    --beaver: #B58171ff;
+    --beaver-dark: hsla(14, 31%, 33%, 1);
+    --isabelline: #EFEAE7ff;
+    --white: #FFFFFFff;
+    --black: #000000ff;
+
+    --bg-color-primary: var(--isabelline);
+    --bg-color-secondary: var(--beaver);
+    --font-color-primary: var(--black);
+    --font-color-secondary: var(--beaver-dark);
 }
 
 * {
@@ -82,7 +140,7 @@ main {
 
 .l-profile .container-image {
     margin: auto;
-    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    border: 0.1rem solid var(--bg-color-secondary);
     height: min-content;
     width: min-content;
     padding: 0.25rem;
@@ -92,7 +150,7 @@ main {
 
 .l-profile img {
     /* border: .25rem solid var(--bg-color-secondary); */
-    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    border: 0.1rem solid var(--bg-color-secondary);
     display: block;
     height: 150px;
     width: 150px;
@@ -120,7 +178,7 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 5rem;
     padding: .25rem;
 }
